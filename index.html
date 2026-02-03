@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modern Frontend | Welcome</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: #0f172a;
+      color: #e5e7eb;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 80px;
+      background: rgba(15, 23, 42, 0.9);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    header h1 {
+      color: #38bdf8;
+      font-size: 22px;
+    }
+
+    nav a {
+      color: #e5e7eb;
+      margin-left: 25px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      min-height: 90vh;
+      padding: 0 20px;
+      background: linear-gradient(135deg, #020617, #0f172a);
+    }
+
+    .hero-content {
+      max-width: 700px;
+    }
+
+    .hero h2 {
+      font-size: 48px;
+      margin-bottom: 20px;
+      color: #f8fafc;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #cbd5f5;
+      margin-bottom: 35px;
+    }
+
+    .btn {
+      padding: 14px 32px;
+      background: #38bdf8;
+      color: #020617;
+      border-radius: 8px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+      display: inline-block;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 30px rgba(56, 189, 248, 0.4);
+    }
+
+    section {
+      padding: 80px 80px;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: #020617;
+      padding: 30px;
+      border-radius: 12px;
+      border: 1px solid #1e293b;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+    }
+
+    .card h3 {
+      margin-bottom: 15px;
+      color: #38bdf8;
+    }
+
+    .card p {
+      color: #cbd5f5;
+      font-size: 15px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #020617;
+      color: #94a3b8;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        padding: 20px 30px;
+      }
+
+      section {
+        padding: 60px 30px;
+      }
+
+      .hero h2 {
+        font-size: 36px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>MyFrontend</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Features</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <div class="hero-content">
+      <h2>Build Fast. Deploy Faster.</h2>
+      <p>
+        A modern frontend template designed for performance, scalability,
+        and clean user experience.
+      </p>
+      <a href="#" class="btn">Get Started</a>
+    </div>
+  </div>
+
+  <!-- Features Section -->
+  <section>
+    <div class="features">
+      <div class="card">
+        <h3>🚀 High Performance</h3>
+        <p>
+          Lightweight design with optimized assets for fast loading times.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>📱 Fully Responsive</h3>
+        <p>
+          Works seamlessly across desktop, tablet, and mobile devices.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>🔒 Secure Ready</h3>
+        <p>
+          Perfect for production deployments behind Nginx, CloudFront, or ALB.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2026 MyFrontend. Built with ❤️ by Parshant.
+  </footer>
+
+</body>
+</html>
+
