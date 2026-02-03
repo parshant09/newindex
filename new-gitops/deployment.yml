@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: new
-        image: parshant09/yy
+        image: parshant09/new
         ports:
         - containerPort: 80
 
